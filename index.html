@@ -1,132 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Traversal Health</title>
-<meta name="description" content="A physician-led oncology platform to take care of the most underserved patient populations.">
+<meta name="description" content="Traversal Health is a physician-led virtual oncology clinic bringing timely, high-quality cancer care inside correctional facilities.">
+<meta property="og:title" content="Traversal Health">
+<meta property="og:description" content="Traversal Health is a physician-led virtual oncology clinic bringing timely, high-quality cancer care inside correctional facilities.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/traversal-logo.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&amp;family=Carlito:ital,wght@0,400;0,700;1,400&amp;display=swap">
 <style>
-  :root{
-    --navy:#000F50;
-    --green:#1E6A23;
-    --paper:#EEF1F5;
-    --ink-soft:rgba(0,15,80,.68);
-    --rule:rgba(0,15,80,.14);
-  }
-
-  *{box-sizing:border-box}
-
-  html,body{margin:0;padding:0}
-
-  body{
-    background:var(--paper);
-    color:var(--navy);
-    font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
-    -webkit-font-smoothing:antialiased;
-    min-height:100svh;
-    display:flex;
-    flex-direction:column;
-    padding:clamp(1.75rem,5vw,4rem);
-    gap:clamp(2.5rem,7vh,5rem);
-  }
-
-  .logo{display:inline-block;line-height:0}
-  .logo img{
-    display:block;
-    width:clamp(190px,26vw,260px);
-    height:auto;
-  }
-
-  main{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-
-  h1{
-    font-family:"Newsreader",Georgia,serif;
-    font-weight:300;
-    font-size:clamp(2.1rem,5.4vw,4.25rem);
-    line-height:1.14;
-    letter-spacing:-.018em;
-    max-width:21ch;
-    margin:0;
-    text-wrap:balance;
-  }
-
-  .ridge{
-    width:104px;
-    height:2px;
-    background:var(--green);
-    border:0;
-    margin:clamp(1.75rem,4vh,2.75rem) 0 0;
-  }
-
-  footer{
-    display:flex;
-    flex-wrap:wrap;
-    gap:clamp(1.5rem,6vw,5rem) clamp(2rem,8vw,7rem);
-    align-items:flex-end;
-    justify-content:space-between;
-    border-top:1px solid var(--rule);
-    padding-top:1.5rem;
-    font-size:.9375rem;
-    line-height:1.75;
-  }
-
-  address{font-style:normal;color:var(--ink-soft)}
-
-  .contact{display:flex;flex-wrap:wrap;gap:1.5rem clamp(2rem,8vw,7rem)}
-
-  a.mail{
-    color:var(--navy);
-    font-weight:500;
-    text-decoration:none;
-    border-bottom:1px solid var(--green);
-    padding-bottom:1px;
-  }
-  a.mail:hover{color:var(--green)}
-
-  a:focus-visible,.logo:focus-visible{
-    outline:2px solid var(--green);
-    outline-offset:4px;
-    border-radius:2px;
-  }
-
-  .copyright{color:var(--ink-soft);font-size:.8125rem}
-
-  @media (max-width:640px){
-    footer{flex-direction:column;align-items:flex-start}
-  }
+/* Traversal Health brand palette (board deck): navy #0B1C55, green #1F7A2E, slate #3C4763, mist #F5F7FA */
+:root { --bg: #FFFFFF; --ink: #0B1C55; --body: #3C4763; --green: #1F7A2E; --mist: #F5F7FA; color-scheme: light; }
+html, body { background: var(--bg); color: var(--body); }
+body { margin: 0; }
+a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+h1, h2, h3 { text-wrap: balance; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
+<div style="background: #FFFFFF; color: #3C4763; font-family: Calibri, Carlito, Arial, sans-serif; font-size: 19px; line-height: 1.6">
 
-  <header>
-    <a class="logo" href="/">
-      <img src="logo.png" alt="Traversal Health" width="1294" height="202">
-    </a>
-  </header>
+<header style="max-width: 1120px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+<img src="assets/traversal-logo.png" alt="Traversal Health" style="height: 50px; width: auto">
+<a href="mailto:inquiries@traversalhealth.com" style="color: #0B1C55; font-weight: 700; text-decoration: none; font-size: 17px; border-bottom: 2px solid #1F7A2E; padding-bottom: 2px">Contact</a>
+</header>
 
-  <main>
-    <h1>A physician-led oncology platform to take care of the most underserved patient populations.</h1>
-    <hr class="ridge">
-  </main>
+<section style="position: relative; overflow: hidden">
+<img src="assets/mountain-mark.png" alt="" aria-hidden="true" style="position: absolute; right: -60px; bottom: -24px; width: 62%; max-width: 820px; height: auto; opacity: 0.10; pointer-events: none">
+<div style="position: relative; max-width: 1120px; margin: 0 auto; padding: 96px 32px 128px">
+<p style="margin: 0 0 24px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">Cancer care inside the walls</p>
+<h1 style="margin: 0 0 40px; font-family: Cambria, Caladea, Georgia, serif; font-size: clamp(40px, 9vw, 68px); line-height: 1.06; font-weight: 700; color: #0B1C55; max-width: 960px">A physician-led virtual oncology clinic for the most underserved patients.</h1>
+<a href="mailto:inquiries@traversalhealth.com" style="color: #1F7A2E; font-weight: 700; font-size: 20px; text-decoration: none">Talk to our team →</a>
+</div>
+</section>
 
-  <footer>
-    <div class="contact">
-      <p style="margin:0"><a class="mail" href="mailto:inquiries@traversalhealth.com">inquiries@traversalhealth.com</a></p>
-      <address>
-        1005 17th Ave S, Suite 900<br>
-        Nashville, TN 37212
-      </address>
-    </div>
-    <p class="copyright">© 2026 Traversal Health</p>
-  </footer>
+<section style="background: #F5F7FA">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 32px">
+<p style="margin: 0 0 20px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">Who we are</p>
+<p style="margin: 0 0 24px; font-family: Cambria, Caladea, Georgia, serif; color: #0B1C55; max-width: 900px; font-size: clamp(24px, 5vw, 30px); line-height: 1.45">Cancer is currently the leading cause of death in U.S. prisons. Cancer care in this setting is very difficult, predominantly driven by challenges associated with security-escorted, off-site visits for every oncology appointment and treatment. These barriers can delay treatment, strain correctional health systems and drive up costs for everyone involved.</p>
+<p style="margin: 0 0 36px; font-family: Cambria, Caladea, Georgia, serif; color: #0B1C55; max-width: 900px; font-size: clamp(24px, 5vw, 30px); line-height: 1.45">That's why we - two practicing medical oncologists passionate about access to care for underserved patients - founded Traversal Health.</p>
+<p style="margin: -16px 0 36px; font-size: 14px; color: #5E6A80">Sources: Manz et al., <i>JAMA Network Open</i>, 2025; U.S. Bureau of Justice Statistics. <a href="#references" style="color: #5E6A80">See references 1, 2</a>.</p>
+<div style="border-left: 3px solid #1F7A2E; padding: 4px 0 4px 24px; max-width: 900px">
+<p style="margin: 0 0 6px; color: #1F7A2E; font-weight: 700; font-size: 13px; letter-spacing: 2px; text-transform: uppercase">Our mission</p>
+<p style="margin: 0; font-size: clamp(24px, 4.8vw, 30px); line-height: 1.4; color: #0B1C55; font-weight: 700">Timely, high-quality, compassionate cancer care inside the walls of the prison, meeting patients and care teams where they are and reducing challenges for everyone involved.</p>
+</div>
+</div>
+</section>
 
+<section style="background: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 104px 32px">
+<p style="margin: 0 0 12px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">Our story</p>
+<h2 style="margin: 0 0 48px; font-family: Cambria, Caladea, Georgia, serif; font-size: 42px; line-height: 1.12; font-weight: 700; color: #0B1C55; max-width: 820px">Founded by two oncologists committed to bringing the best cancer care to every patient, wherever they are.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 420px; border-top: 3px solid #1F7A2E; padding-top: 24px">
+<h3 style="margin: 0; font-family: Cambria, Caladea, Georgia, serif; font-size: 26px; color: #0B1C55">Chris Manz, MD, MSHP</h3>
+<p style="margin: 0 0 16px; color: #1F7A2E; font-weight: 700; font-size: 16px">Co-Founder &amp; Medical Oncologist</p>
+<p style="margin: 0">As an oncologist and researcher at Dana-Farber and Harvard Medical School, Chris set out to learn how cancer care in prison could be improved. He led studies of more than 2 million cancer cases that show how incarceration affects survival,<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">3</a></sup> and interviewed correctional medical directors, clinicians, and oncologists across 16 prison systems<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">1,5</a></sup> to learn how to improve cancer care for incarcerated patients. He left Harvard to implement these solutions with Traversal.</p>
+</div>
+<div style="flex: 1 1 420px; border-top: 3px solid #1F7A2E; padding-top: 24px">
+<h3 style="margin: 0; font-family: Cambria, Caladea, Georgia, serif; font-size: 26px; color: #0B1C55">Stephen Schleicher, MD, FASCO</h3>
+<p style="margin: 0 0 16px; color: #1F7A2E; font-weight: 700; font-size: 16px">Co-Founder &amp; Medical Oncologist</p>
+<p style="margin: 0">Inspired by his mother's work as the first chaplain at the Tennessee Prison for Women, Stephen built his career around patients who are too often overlooked. After residency at Harvard and fellowship at Memorial Sloan Kettering, he became Chief Medical Officer of Tennessee Oncology. He also serves as chair-elect of ASCO's Quality Certification Steering Group.</p>
+</div>
+</div>
+<div style="margin: 56px 0 0; border-top: 1px solid #D6E0E6; padding-top: 28px; max-width: 900px">
+<p style="margin: 0 0 10px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">Expanded team</p>
+<p style="margin: 0; font-family: Cambria, Caladea, Georgia, serif; font-size: clamp(22px, 4.5vw, 26px); line-height: 1.45; color: #0B1C55">In addition to our core leadership our expanded team includes justice-impacted individuals, public health thought leaders, former government officials and correctional health experts.</p>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #D6E0E6; border-bottom: 1px solid #D6E0E6">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 32px 0">
+<p style="margin: 0; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">The cancer gap - by the numbers</p>
+</div>
+<div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 56px; display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 220px; padding: 8px 28px 8px 0">
+<div style="font-family: Cambria, Caladea, Georgia, serif; font-size: 60px; font-weight: 700; color: #1F7A2E; line-height: 1">46%</div>
+<p style="margin: 12px 0 0; font-size: 17px">Higher risk of dying from cancer when diagnosed in prison<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">3</a></sup></p>
+</div>
+<div style="flex: 1 1 220px; padding: 8px 28px; border-left: 1px solid #D6E0E6">
+<div style="font-family: Cambria, Caladea, Georgia, serif; font-size: 60px; font-weight: 700; color: #1F7A2E; line-height: 1">71%</div>
+<p style="margin: 12px 0 0; font-size: 17px">Higher risk when diagnosed after release<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">3</a></sup></p>
+</div>
+<div style="flex: 1 1 220px; padding: 8px 28px; border-left: 1px solid #D6E0E6">
+<div style="font-family: Cambria, Caladea, Georgia, serif; font-size: 60px; font-weight: 700; color: #1F7A2E; line-height: 1">2–3 mo</div>
+<p style="margin: 12px 0 0; font-size: 17px">From suspected cancer to diagnosis, one trip at a time<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">1</a></sup></p>
+</div>
+<div style="flex: 1 1 220px; padding: 8px 0 8px 28px; border-left: 1px solid #D6E0E6">
+<div style="font-family: Cambria, Caladea, Georgia, serif; font-size: 60px; font-weight: 700; color: #1F7A2E; line-height: 1">2</div>
+<p style="margin: 12px 0 0; font-size: 17px">Officers pulled from post for every outside visit<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">1</a></sup></p>
+</div>
+</div>
+<div style="max-width: 1120px; margin: 0 auto; padding: 0 32px 48px">
+<div style="background: #EAEFF7; border-radius: 14px; padding: 28px 32px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center">
+<div style="flex: 0 0 auto; font-family: Cambria, Caladea, Georgia, serif; font-size: 48px; font-weight: 700; color: #0B1C55; line-height: 1">2×</div>
+<div style="flex: 1 1 520px; font-size: 19px; color: #0B1C55"><span style="font-weight: 700">How care is delivered changes the outcome.</span> In a study of 106,000 people in California prisons, patients who had not been screened in the three months before diagnosis were twice as likely to be diagnosed at stage IV (21% vs. 10%). Recently screened patients were also 37% less likely to die.<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">4</a></sup></div>
+</div>
+<div style="margin: 56px 0 8px">
+<p style="margin: 0 0 8px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">One facility's daily transport capacity</p>
+<p style="margin: 0 0 20px; max-width: 760px">A real-world example from Dr. Manz's national study: at one prison, custody staffing allowed only four escorted trips a day, and three cancer patients on daily radiation needed three of them. That left one trip for every other outside appointment.<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">1</a></sup></p>
+<blockquote style="margin: 0; padding: 0 0 0 24px; border-left: 3px solid #1F7A2E; max-width: 860px">
+<p style="margin: 0 0 8px; font-family: Cambria, Caladea, Georgia, serif; font-size: clamp(20px, 4vw, 24px); line-height: 1.4; color: #0B1C55">&#8220;We only have 4 trips out, 4 people a day. We have 3 cancer patients getting radiation almost daily.&#8221;</p>
+<p style="margin: 0; font-size: 15px; color: #5E6A80">Prison medical director, interviewed in a national study led by Dr. Manz<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">1</a></sup></p>
+</blockquote>
+</div>
+<p style="margin: 28px 0 0; border-top: 1px solid #D6E0E6; padding-top: 20px; font-size: 16px; color: #3C4763"><span style="font-weight: 700; color: #0B1C55">Research led by co-founder Dr. Chris Manz:</span> four peer-reviewed studies in <i>JAMA Network Open</i>, 2025–2026.<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">1,3,4,5</a></sup> <a href="#references" style="color: #1F7A2E; font-weight: 700">See references</a></p>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 104px 32px">
+<p style="margin: 0 0 12px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">For corrections partners</p>
+<h2 style="margin: 0 0 48px; font-family: Cambria, Caladea, Georgia, serif; font-size: 42px; line-height: 1.12; font-weight: 700; color: #0B1C55; max-width: 780px">A world-class oncology clinic, inside the walls.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 280px; border-top: 3px solid #0B1C55; padding-top: 24px">
+<h3 style="margin: 0 0 12px; font-family: Cambria, Caladea, Georgia, serif; font-size: 26px; color: #0B1C55">Lower security risk</h3>
+<p style="margin: 0">Every trip outside the prison is a security risk: regular recurring clinic visits, public roads, hospital waiting rooms, and officers off post. Keeping care inside lowers these risks.</p>
+</div>
+<div style="flex: 1 1 280px; border-top: 3px solid #0B1C55; padding-top: 24px">
+<h3 style="margin: 0 0 12px; font-family: Cambria, Caladea, Georgia, serif; font-size: 26px; color: #0B1C55">Fewer transports</h3>
+<p style="margin: 0">Based on common cancers and treatment regimens, we estimate that 30 patients on active treatment delivered outside of prison have around 400 off-site visits each year. We move consults and treatment on-site, so trips out are reserved for surgery, radiation, and advanced imaging.</p>
+</div>
+<div style="flex: 1 1 280px; border-top: 3px solid #0B1C55; padding-top: 24px">
+<h3 style="margin: 0 0 12px; font-family: Cambria, Caladea, Georgia, serif; font-size: 26px; color: #0B1C55">Better outcomes</h3>
+<p style="margin: 0">Every month of delay in cancer treatment can raise the risk of death by around 10%.<sup style="font-size: 0.6em; line-height: 0; margin-left: 1px"><a href="#references" style="color: #1F7A2E; text-decoration: none; font-weight: 700">6</a></sup> Our oncologists help guide workups from first suspicion of malignancy, and our supportive care helps patients tolerate treatment, with fewer ER visits and hospitalizations.</p>
+</div>
+</div>
+</section>
+
+
+<section id="contact" style="border-top: 1px solid #D6E0E6">
+<div style="max-width: 1120px; margin: 0 auto; padding: 104px 32px">
+<h2 style="margin: 0 0 16px; font-family: Cambria, Caladea, Georgia, serif; font-size: 42px; line-height: 1.12; font-weight: 700; color: #0B1C55; max-width: 780px">Bring cancer care inside your facilities.</h2>
+<p style="margin: 0 0 28px">For departments of corrections and correctional health providers.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: baseline">
+<a href="mailto:inquiries@traversalhealth.com" style="color: #1F7A2E; font-weight: 700; font-size: 20px; text-decoration: none">Talk to our team →</a>
+<span style="font-size: 18px; color: #0B1C55; user-select: all">inquiries@traversalhealth.com</span>
+</div>
+</div>
+</section>
+
+<section id="references" style="border-top: 1px solid #D6E0E6">
+<div style="max-width: 1120px; margin: 0 auto; padding: 56px 32px 64px">
+<p style="margin: 0 0 10px; color: #1F7A2E; font-weight: 700; font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase">References</p>
+<p style="margin: 0 0 20px; font-size: 16px; color: #0B1C55">Four of the six studies cited here (1, 3, 4, 5) were led by Traversal co-founder and Chief Medical Officer <b>Dr. Chris Manz</b>.</p>
+<ol style="margin: 0; padding-left: 24px; font-size: 15px; line-height: 1.55; color: #3C4763">
+<li style="margin: 0 0 10px; padding-left: 4px"><b style="color: #0B1C55">Manz CR</b>, Nava-Coulter B, Voligny E, Gundersen DA, Wright AA. <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2840136" style="color: #0B1C55; font-weight: 700">Barriers and Facilitators to Delivering Cancer Care in US Prisons.</a> <i>JAMA Netw Open</i>. 2025;8(10):e2537646.</li>
+<li style="margin: 0 0 10px; padding-left: 4px">U.S. Bureau of Justice Statistics. <a href="https://bjs.ojp.gov/content/pub/pdf/mljsp0012st.pdf" style="color: #0B1C55; font-weight: 700">Mortality in Local Jails and State Prisons, 2000–2012: Statistical Tables.</a> 2014.</li>
+<li style="margin: 0 0 10px; padding-left: 4px"><b style="color: #0B1C55">Manz CR</b>, Tramontano AC, Dias SL, Voligny E, Baggett CD, Wright AA, Schrag D. <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855827" style="color: #0B1C55; font-weight: 700">Cancer Incidence and Survival Among Ever-Incarcerated Patients in California and Massachusetts.</a> <i>JAMA Netw Open</i>. 2026;9(10):e2639346.</li>
+<li style="margin: 0 0 10px; padding-left: 4px"><b style="color: #0B1C55">Manz CR</b>, Tramontano AC, Voligny E, et al. <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855825" style="color: #0B1C55; font-weight: 700">Cancer Screening, Diagnosis, and Survival in California Prisons.</a> <i>JAMA Netw Open</i>. 2026;9(10):e2640539.</li>
+<li style="margin: 0 0 10px; padding-left: 4px"><b style="color: #0B1C55">Manz CR</b>, Nava-Coulter B, Voligny E, Gundersen DA, Wright AA. <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2840137" style="color: #0B1C55; font-weight: 700">Correctional Health and Oncologist Perspectives on Strategies to Improve Cancer Care in US Prisons: A Qualitative Study.</a> <i>JAMA Netw Open</i>. 2025;8(10):e2537640.</li>
+<li style="margin: 0 0 10px; padding-left: 4px">Hanna TP, King WD, Thibodeau S, et al. <a href="https://www.bmj.com/content/371/bmj.m4087" style="color: #0B1C55; font-weight: 700">Mortality due to cancer treatment delay: systematic review and meta-analysis.</a> <i>BMJ</i>. 2020;371:m4087.</li>
+</ol>
+</div>
+</section>
+
+<footer style="background: #0B1C55; color: #9FB2C0">
+<div style="max-width: 1120px; margin: 0 auto; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center; font-size: 15px">
+<div><span style="font-weight: 700; letter-spacing: 2px; color: #FFFFFF">TRAVERSAL</span> <span style="font-weight: 700; letter-spacing: 2px; color: #4FB35F">HEALTH</span> · © 2026</div>
+<div>Hiring oncologists, oncology NPs, and oncology-certified nurses. <a href="#contact" style="color: #4FB35F">Join us</a></div>
+</div>
+</footer>
+
+</div>
 </body>
 </html>
